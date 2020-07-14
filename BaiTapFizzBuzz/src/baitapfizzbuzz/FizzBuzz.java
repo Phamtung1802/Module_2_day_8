@@ -8,21 +8,21 @@ public class FizzBuzz {
     public static final String ERROR = "Error";
 
     public static String translateFizzBuzz(int number){
-        boolean isNumberDivisibleBy3 = number % 3 == 0;
-        boolean isNumberDivisibleBy5 = number % 5 == 0;
+        boolean isDivisibleBy3 = number % 3 == 0;
+        boolean isDivisibleBy5 = number % 5 == 0;
         Integer numberOBJ= number;
-        String numberStr=numberOBJ.toString();
+        String numberString=numberOBJ.toString();
 
         if(number<0||number>=100){
-            return numberStr;
+            return numberString;
         }
-        if((isNumberDivisibleBy3 && isNumberDivisibleBy5)||(numberStr.contains("3")&&numberStr.contains("5"))){
+        if((isDivisibleBy3 && isDivisibleBy5)||(numberString.contains("3")&&numberString.contains("5"))){
             return FIZZ_BUZZ;
         }
-        if(isNumberDivisibleBy3 ||numberStr.contains("3")){
+        if(isDivisibleBy3 ||numberString.contains("3")){
             return FIZZ;
         }
-        if(isNumberDivisibleBy5 ||numberStr.contains("5")){
+        if(isDivisibleBy5 ||numberString.contains("5")){
             return BUZZ;
         }
         return ERROR;

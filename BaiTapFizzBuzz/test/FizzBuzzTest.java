@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
+
     @Test
     @DisplayName("Case -1")
     public void translateFizzBuzzTest(){
@@ -15,7 +16,7 @@ public class FizzBuzzTest {
     @DisplayName("Case 0")
     public void translateFizzBuzzTest1(){
         int number=0;
-        String expected="FizzBuzz";
+        String expected= "FizzBuzz";
         assertEquals(expected,FizzBuzz.translateFizzBuzz(number));
     }
     @Test

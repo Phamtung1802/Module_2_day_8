@@ -25,7 +25,6 @@ public class TennisGame {
                 case 0:
                     score = LOVE_ALL;
                     break;
-
                 case 1:
                     score = FIFTEEN_ALL;
                     break;
@@ -38,7 +37,6 @@ public class TennisGame {
                 default:
                     score = DEUCE;
                     break;
-
             }
         }
         else if (m_score1>=4 || m_score2>=4)
@@ -82,7 +80,6 @@ public class TennisGame {
         }
         return score;
     }
-
     private static String getResult(String advantagePlayer1) {
         String score;
         score = advantagePlayer1;
