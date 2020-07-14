@@ -13,7 +13,7 @@ public class FizzBuzz {
         Integer numberOBJ= number;
         String numberString=numberOBJ.toString();
 
-        if(number<0||number>=100){
+        if(number<0||number>=99){
             return numberString;
         }
         if((isDivisibleBy3 && isDivisibleBy5)||(numberString.contains("3")&&numberString.contains("5"))){
