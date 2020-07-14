@@ -45,14 +45,15 @@ public class TennisGame {
         {
             int minusResult = m_score1-m_score2;
             boolean isResultEqual1 = minusResult == 1;
-            if (isResultEqual1) score = ADVANTAGE_PLAYER_1;
-            else {
+            if (isResultEqual1) {
+                score = getResult(ADVANTAGE_PLAYER_1);
+            } else {
                 boolean isResultEqualMinus1 = minusResult == -1;
                 if (isResultEqualMinus1) score = ADVANTAGE_PLAYER_2;
                 else {
                     boolean isResultLargerOrEqual2 = minusResult >= 2;
-                    if (isResultLargerOrEqual2) score = WIN_FOR_PLAYER_1;
-                    else score = WIN_FOR_PLAYER_2;
+                    if (isResultLargerOrEqual2)  score = getResult(WIN_FOR_PLAYER_1);
+                    else  score = getResult(WIN_FOR_PLAYER_2);
                 }
             }
         }
@@ -79,6 +80,12 @@ public class TennisGame {
                 }
             }
         }
+        return score;
+    }
+
+    private static String getResult(String advantagePlayer1) {
+        String score;
+        score = advantagePlayer1;
         return score;
     }
 }
