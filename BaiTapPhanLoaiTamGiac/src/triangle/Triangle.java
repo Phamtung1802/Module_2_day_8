@@ -10,7 +10,7 @@ public class Triangle {
     public static String classifyTriangle(int side1, int side2, int side3){
         boolean areSidesEqual_0_OrLess = side1 <= 0 || side2 <= 0 || side3 <= 0;
         boolean areTwoSidesEqual= (side1==side2&&side2!=side3)||(side1==side3&&side3!=side2)||(side2==side3&&side3!=side1);
-        boolean areSidesTotalValid = (side1 + side2 >= side3) && (side1 + side3 >= side2) && (side2 + side3 >= side1);
+        boolean areSidesTotalValid = (side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1);
         boolean areSidesEqual = side1 == side2 && side2 == side3 && side1 == side3;
 
         if(areSidesEqual_0_OrLess){
