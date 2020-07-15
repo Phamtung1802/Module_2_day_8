@@ -5,9 +5,10 @@ import java.util.*;
 
 public class NextDayCalculator {
 
-    public Scanner sc = new Scanner(System.in);
+
     public String date;
     public SimpleDateFormat dateFormat;
+    static SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy");
     public NextDayCalculator(){
 
     }
