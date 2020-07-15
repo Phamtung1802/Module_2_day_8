@@ -14,17 +14,20 @@ public class FizzBuzz {
         boolean isDivisibleBy5 = number % 5 == 0;
         Integer numberOBJ= number;
         String numberString=numberOBJ.toString();
+        boolean doesContain3 = numberString.contains("3");
+        boolean doesContain5 = numberString.contains("5");
 
         if(number< MIN_VALUE ||number> MAX_VALUE){
             return numberString;
         }
-        if((isDivisibleBy3 && isDivisibleBy5)||(numberString.contains("3")&&numberString.contains("5"))){
+
+        if((isDivisibleBy3 && isDivisibleBy5)||(doesContain3 && doesContain5)){
             return FIZZ_BUZZ;
         }
-        if(isDivisibleBy3 ||numberString.contains("3")){
+        if(isDivisibleBy3 || doesContain3){
             return FIZZ;
         }
-        if(isDivisibleBy5 ||numberString.contains("5")){
+        if(isDivisibleBy5 || doesContain5){
             return BUZZ;
         }
         return ERROR;

@@ -4,11 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class NextDayCalculator {
-
-
     public String date;
     public SimpleDateFormat dateFormat;
     static SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy");
+
     public NextDayCalculator(){
 
     }
