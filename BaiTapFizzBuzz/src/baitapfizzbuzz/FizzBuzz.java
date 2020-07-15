@@ -8,7 +8,6 @@ public class FizzBuzz {
     public static final String ERROR = "Error";
     public static final int MIN_VALUE = 0;
     public static final int MAX_VALUE = 99;
-
     public static String translateFizzBuzz(int number){
         boolean isDivisibleBy3 = number % 3 == 0;
         boolean isDivisibleBy5 = number % 5 == 0;
